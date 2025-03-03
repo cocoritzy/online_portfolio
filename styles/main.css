@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-* {font-family: 'Inter';}
-
+/* General Styles */
+* {
+  font-family: 'Inter', sans-serif;
+  color: rgb(0, 0, 0); /* Change text color to black */
+  background-color: rgb(255, 255, 255); /* Set background to white */
+}
 
 /* Home page styles */
 .title {
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
-  color: #d6fde3;
+  color: rgb(0, 0, 0); /* Set title text to black */
   margin-bottom: 5px;
 }
 
 .subtitle {
   font-size: 1.5em;
   font-weight: 500;
-  color: #d6fde3;
+  color: rgb(0, 0, 0); /* Set subtitle text to black */
   margin-bottom: 5px;
 }
 
@@ -28,8 +32,8 @@
 
 ul {
   list-style-type: none;
+  color: rgb(0, 0, 0); /* Ensure list text is black */
 }
-
 
 /* Animated home profile image styles */
 .container {
@@ -44,16 +48,16 @@ ul {
   width: 300px;
   height: 300px;
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: scale(1.42);
-  }
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(1.42);
 }
 
 .spin-container {
@@ -81,7 +85,7 @@ ul {
   left: -5%;
   top: -5%;
   display: flex;
-  color: #003;
+  color: rgb(0, 0, 0); /* Set text inside profile image to black */
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -108,8 +112,9 @@ ul {
   }
 }
 
-
 /* Hide Streamlit default elements */
 #MainMenu {visibility: hidden;}
 header {visibility: hidden;}
-/* footer {visibility: hidden;} */
+
+/* Optional: Uncomment the next line if you want to hide the footer */
+footer {visibility: hidden;}
