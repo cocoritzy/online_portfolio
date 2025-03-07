@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* General Styles */
+General Styles
 * {
   font-family: 'Inter', sans-serif;
   color: rgb(0, 0, 0); /* Change text color to black */
-  background-color: rgb(255, 255, 255); /* Set background to white */
+  background-color: rgb(255, 255, 255); Set background to white
+}
+
+/* Style for select elements to remove black boxes */
+select {
+  background-color: white;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px;
+  padding: 5px;
+  color: black;
+}
+
+select:focus {
+  outline: none;
+  border-color: #666; /* Darker grey when focused */
 }
 
 /* Home page styles */
