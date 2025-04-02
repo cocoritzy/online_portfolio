@@ -152,7 +152,7 @@ def internet_carbon_footprint():
 
         *The data for these subsystems is sourced from the International Energy Agency (IEA, 2022), as well as studies by Anders Andrae (Andrae, 2020)* .""")
 
-    st.image("assets/internet.JPG", caption="The system boundaries", use_container_width=True)
+    st.image("assets/internet.jpg", caption="The system boundaries", use_container_width=True)
 
     ("""
     2. Collecting the data: The tool uses Wireshark (Network Traffic Analyzer) to capture Internet network traffic of users.
