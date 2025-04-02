@@ -199,7 +199,7 @@ def internet_carbon_footprint():
     st.subheader(" The final architecture")
 
     # Display image (Replace with actual project image)
-    st.image("assets/system.JPG", caption="The architecture", use_container_width=True)
+    st.image("assets/system.jpg", caption="The architecture", use_container_width=True)
 
     st.markdown("""
     ### References
